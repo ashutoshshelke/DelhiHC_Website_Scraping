@@ -16,3 +16,4 @@ class ScrapeDhcItem(scrapy.Item):
     status = scrapy.Field()
     petitioner_vs_respondent = scrapy.Field()
     listing_date = scrapy.Field()
+    #_id = scrapy.Field()

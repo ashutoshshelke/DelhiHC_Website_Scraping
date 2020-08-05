@@ -7,7 +7,7 @@ def scrape():
     os.system("scrapy crawl dhc")
     print("IMPLEMENTATION")
 
-schedule.every().hour.do(scrape)
+schedule.every().minute.do(scrape)
 
 while 1:
     schedule.run_pending()
