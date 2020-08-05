@@ -50,6 +50,3 @@ class DhcSpider(scrapy.Spider):
         for a in response.css('#InnerPageContent a::attr(href)')[:5]:
             print("in last for")
             yield response.follow(a, callback= self.start_scraping)
-
-        # link = "http://delhihighcourt.nic.in/dhc_case_status_oj_list.asp?pno=987478"
-        # yield response.follow(link, callback = self.parse)
